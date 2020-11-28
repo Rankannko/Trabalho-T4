@@ -15,8 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -31,7 +32,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/sqlite-jdbc-3.27.2.1.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -50,7 +55,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -65,31 +70,39 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="91" key="#com.intellij.ide.util.MemberChooser" timestamp="1606518419265">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1606575855364">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1606432581603" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1606575855364" />
     <state x="549" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606518419265" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1606519104958">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="410" y="105" key="FileChooserDialogImpl" timestamp="1606586334299">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606435199223" />
+    <state x="410" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606586334299" />
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1606586639604">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606586639604" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606519104958" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1606519104958">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1606586639604">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606435199223" />
+    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606586639604" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606519104958" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1606519104958">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1606586639604">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606435199223" />
+    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606586639604" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606519104958" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1606519104958">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1606586639604">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606435199223" />
+    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606586639604" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606519104958" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1606586339467">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1606586339467" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606517945567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
