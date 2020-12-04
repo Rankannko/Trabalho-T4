@@ -7,6 +7,11 @@ import java.util.List;
 import java.util.Scanner;
 import com.company.DAO.PersonagemDAO;
 
+/**
+ * Classe Menu, onde o programa esta esquematizado. A partir daqui a interface visual e as chamadas são realizadas
+ * @Author João Pedro de Pauda Santoro Azevedo RA: 18.02277-4 e-mail: azevedomasterjp27@hotmail.com
+ * @since 04/12
+ */
 public class Menu {
     private Scanner scanner;
     private List<Personagem> personagems;
@@ -33,6 +38,12 @@ public class Menu {
                 case 2:
                     exibirPersonagems();
                     break;
+                case 3:
+                    atualizarPersonagem();
+                    break;
+                case 4:
+                    deletarPersonagem();
+                    break;
             }
 
         }while(alive);
@@ -42,7 +53,7 @@ public class Menu {
         Classes classe;
         Racas raca;
         int Mana, Ataque, AtaqueMagico, Defesa, DefesaMagica, Velocidade, Destreza, Experiencia, Nivel;
-        System.out.println("Digite os dados:");
+        System.out.println("Digite o nome do personagem:");
         Nome = scanner.nextLine();
         System.out.println("Digite a classe do personagem");
         classe = Classes.valueOf(scanner.nextLine());
@@ -68,16 +79,59 @@ public class Menu {
         Nivel= Integer.parseInt(scanner.nextLine());
         personagemDAO.create(new Personagem(Nome,classe,raca,Mana, Ataque, AtaqueMagico, Defesa, DefesaMagica, Velocidade, Destreza, Experiencia, Nivel));
     }
+
     public void exibirPersonagems(){
         personagems=personagemDAO.getAll();
         System.out.println("Personagens:");
-        personagems.forEach( pokemon-> System.out.println(pokemon));
+        personagems.forEach( personagem-> System.out.println(personagem));
     }
 
+    public void atualizarPersonagem(){
+        String Nome;
+        Classes classe;
+        Racas raca;
+        int Mana, Ataque, AtaqueMagico, Defesa, DefesaMagica, Velocidade, Destreza, Experiencia, Nivel;
+        personagems=personagemDAO.getAll();
+        System.out.println("Digite o nome do personagem:");
+        Nome = scanner.nextLine();
+        System.out.println("Digite a classe do personagem");
+        classe = Classes.valueOf(scanner.nextLine().toUpperCase());
+        System.out.println("Digite a raça do personagem:");
+        raca = Racas.valueOf(scanner.nextLine().toUpperCase());
+        System.out.println("Digite a Mana:");
+        Mana = Integer.parseInt(scanner.nextLine());
+        System.out.println("Digite o ataque:");
+        Ataque = Integer.parseInt(scanner.nextLine());
+        System.out.println("Digite o ataque magico:");
+        AtaqueMagico = Integer.parseInt(scanner.nextLine());
+        System.out.println("Digite a defesa:");
+        Defesa = Integer.parseInt(scanner.nextLine());
+        System.out.println("Digite a defesa magica:");
+        DefesaMagica= Integer.parseInt(scanner.nextLine());
+        System.out.println("Digite a velocidade:");
+        Velocidade= Integer.parseInt(scanner.nextLine());
+        System.out.println("Digite a destreza:");
+        Destreza = Integer.parseInt(scanner.nextLine());
+        System.out.println("Digite a experiencia atual:");
+        Experiencia= Integer.parseInt(scanner.nextLine());
+        System.out.println("Digite o nivel atual:");
+        Nivel= Integer.parseInt(scanner.nextLine());
+        personagemDAO.update(new Personagem(
+                Nome,classe,raca, Mana, Ataque, AtaqueMagico, Defesa, DefesaMagica, Velocidade, Destreza, Experiencia, Nivel)
+        );
+    }
+
+    public void deletarPersonagem(){
+        System.out.println("Escrever o nome do personagem a ser deletado:");
+        String nome = scanner.nextLine();
+        Personagem personagem = new Personagem(nome);
+        personagemDAO.delete(personagem);
+    }
     public void menuVisual(){
         System.out.println("O que deseja fazer?");
-        System.out.println("1-Criar novo personagem");
-        System.out.println("2-Exibir lista de personagens disponiveis");
-
+        System.out.println("1-Criar novo personagem:");
+        System.out.println("2-Exibir lista de personagens disponiveis:");
+        System.out.println("3- Atualizar um personagem:");
+        System.out.println("4- Deletar um personagem;");
     }
 }

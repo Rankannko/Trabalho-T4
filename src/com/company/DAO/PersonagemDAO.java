@@ -145,12 +145,12 @@ public class PersonagemDAO implements DAO<Personagem>, DAOFields {
 
     @Override
     public String getUpdateString(String table) {
-        return "UPDATE "+ table +" SET nome = ?,classe = ?, raca= ?, mana= ?, ataque= ?, ataqueMagico= ?, defesa= ?, defesaMagica= ?, velocidade= ?, destreza= ?, experiencia= ?, nivel= ? WHERE nome =?";
+        return "UPDATE "+ table +" SET nome = ?, classe = ?, raca = ?, mana = ?, ataque = ?, ataqueMagico = ?, defesa = ?, defesaMagica = ?, velocidade = ?, destreza = ?, experiencia = ?, nivel = ? WHERE nome = ?;";
     }
 
     @Override
     public String getInsertString(String table) {
-        return "INSERT INTO "+ table + "(nome,classe,raca,mana,ataque,ataqueMagico,defesa,defesaMagica,velocidade,destreza,experiencia,nivel) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+        return "INSERT INTO "+ table + "(nome,classe,raca,mana,ataque,ataqueMagico,defesa,defesaMagica,velocidade,destreza,experiencia,nivel) VALUES (?,?,?,?,?,?,?,?,?,?,?,?);";
     }
 
     @Override

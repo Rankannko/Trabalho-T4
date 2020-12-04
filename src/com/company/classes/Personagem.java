@@ -3,6 +3,8 @@ import com.company.Enums.Classes;
 import com.company.Enums.Racas;
 
 public class Personagem {
+
+
     public Personagem(String nome, Classes classe, Racas raca, int mana, int ataque, int ataqueMagico, int defesa, int defesaMagica, int velocidade, int destreza, int experiencia, int nivel) {
         Nome = nome;
         this.classe = classe;
@@ -17,6 +19,7 @@ public class Personagem {
         Experiencia = experiencia;
         Nivel = nivel;
     }
+    public Personagem(String nome){this(nome,null,null,0,0,0,0,0,0,0,0,0);}
 
     @Override
     public String toString() {
